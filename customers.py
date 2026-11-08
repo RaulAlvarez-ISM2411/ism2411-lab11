@@ -24,3 +24,12 @@ print(customer)
 
 del customer["email"]
 print(customer)
+
+# Exercise 3 
+
+print(customer.get("email", "no email on file"))
+
+try:
+    print(customer["email"])
+except KeyError:
+    print("KeyError: email does not exist")
