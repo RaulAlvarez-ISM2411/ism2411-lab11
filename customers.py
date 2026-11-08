@@ -1,4 +1,4 @@
-# Exercise 1 - One Customer
+# Exercise 1 
 
 customer = {
     "name": "Alice",
@@ -12,4 +12,15 @@ print(customer["email"])
 print(customer["tier"])
 print(customer["ytd_spend"])
 
+print(customer)
+
+# Exercise 2 
+
+customer["phone"] = "305-555-1234"
+print(customer)
+
+customer["tier"] = "platinum"
+print(customer)
+
+del customer["email"]
 print(customer)
