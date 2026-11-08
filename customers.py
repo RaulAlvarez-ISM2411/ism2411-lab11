@@ -41,3 +41,21 @@ for key, value in customer.items():
 
 for key in customer:
     print(key)
+
+# Exercise 5
+
+tier_discounts = {
+    "bronze": 0,
+    "silver": 0.05,
+    "gold": 0.10,
+    "platinum": 0.15
+}
+
+discount = tier_discounts.get(customer["tier"], 0)
+
+purchase_price = 200
+final_price = purchase_price * (1 - discount)
+
+print("Tier:", customer["tier"])
+print("Discount rate:", discount * 100, "%")
+print("Final price:", final_price)
