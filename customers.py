@@ -33,3 +33,11 @@ try:
     print(customer["email"])
 except KeyError:
     print("KeyError: email does not exist")
+
+ # Exercise 4 
+
+for key, value in customer.items():
+    print(f"{key}: {value}")
+
+for key in customer:
+    print(key)
